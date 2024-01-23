@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã đơn hàng:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvorderid"
+            android:text="12"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv1"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Người Đặt:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tv1"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvordername"
+            android:text="Nguyễn Tấn Phước"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvorderid"
+            app:layout_constraintStart_toEndOf="@id/tv4"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvordername"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvorderphone"
+            android:text="0329361062"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvordername"
+            app:layout_constraintStart_toEndOf="@id/tv5"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvorderphone"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+
+        <TextView
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvorderaddress"
+            android:text="Tân THiềng tân an hội mang thít vĩnh long"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvorderphone"
+            app:layout_constraintStart_toEndOf="@id/tv6"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời gian đặt:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvorderaddress"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvordertime"
+            android:text="2023-11-13T13:56:57"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tvorderaddress"
+            app:layout_constraintStart_toEndOf="@id/tv2"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tv2"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvordertotal"
+            android:text="20000"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/tv2"
+            app:layout_constraintStart_toEndOf="@id/tv3"
+            android:layout_marginLeft="15dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
